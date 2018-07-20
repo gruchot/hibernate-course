@@ -1,9 +1,13 @@
 package pl.gru.homework;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
+@Entity
+@Table(name = "Coach")
 public class Coach {
     @NotNull
     @Column
